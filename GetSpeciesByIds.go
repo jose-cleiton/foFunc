@@ -1,9 +1,9 @@
 package area
 
 import (
-  "encoding/json"
-  "fmt"
-  "io/ioutil"
+	"encoding/json"
+	"fmt"
+	"io/ioutil"
 )
 
 
@@ -26,7 +26,7 @@ type ZooData struct {
 
 func GetSpeciesByIds(ids ...string) ([]Species, error) {
   // ler o arquivo JSON e armazenar os dados em uma variável do tipo ZooData
-  data, err := ioutil.ReadFile("./data/zoo_data.json")
+  data, err := ioutil.ReadFile("/jose-cleiton/foFunc/data")
   if err != nil {
     return nil, err
   }
